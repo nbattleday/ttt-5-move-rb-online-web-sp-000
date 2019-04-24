@@ -6,4 +6,4 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-#to_5 + 1
+input to index #to_'5'
