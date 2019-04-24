@@ -6,22 +6,13 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-input to index "5 + 1"
+def input_to_index(user_input)
+  new_user_input = user_input.to_i
+  new_user_input -= 1
+  return new_user_input
+end
 
-def number_adder(n)
-  n += 10
+def move(board, index, character = "X")
+  board[index] = character
+  return board
 end
- 
-def array_adder(a)
-  a << "new thing at the end of the array"
-end
- 
-x = 10
-puts "Before call #{x}"
-number_adder(x)
-puts "After call: #{x}: Holy moly, unchanged!"
- 
-z = [1, 'hi', "Byron"]
-puts "Before call #{z}"
-array_adder(z)
-puts "After call #{z}: Holy moly, *changed*!"
